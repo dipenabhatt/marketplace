@@ -34,7 +34,10 @@
                              "description": "test description",
                              "maxBudgetAmount": 1000,
                              "bidingEndTime": "2018-03-26T15:00:00",
-                             "minBid": null
+                             "minBid": {
+                                     "bidAmount": "99.99",
+                                     "buyerId": "1009"
+                             }
                          }
     3. Create Bid
         - Method: POST
@@ -48,7 +51,8 @@
 
 # Choice of technologies
 
-    1. Spring Boot with JPA
+    1. Jdk 1.8
+    2. Spring Boot with JPA
         - Spring boot is light weight, ideal candidate to build quick Rest API and ready to use for production.
-    2. H2 embedded DB to store the project data.
-    2. In Memory ConcurrentHashMap Data Structure to Store Bids for faster minimum Bid calculation using MinHeap data Structure.
+    3. H2 embedded DB to store the project data.
+    4. In Memory ConcurrentHashMap Data Structure to Store Bids for faster minimum Bid calculation using MinHeap data Structure.
