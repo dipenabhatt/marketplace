@@ -9,7 +9,7 @@
         5.1 Run following command to build a Jar file
             - ./gradlew jar
         5.2 Run Following Command to Run the In built Server.
-
+            - java -jar build/libs/marketplace-0.0.1-SNAPSHOT.jar
 
 # API and End Points
 
